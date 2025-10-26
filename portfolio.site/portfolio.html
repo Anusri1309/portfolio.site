@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Anu Sri</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1 class="logo">Anu Sri</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="portfolio.html" class="active">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Portfolio Section -->
+  <section class="project">
+    <h1>My Projects</h1>
+    <p class="intro">Here are a few projects that showcase my design and development skills.</p>
+
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="ecommerce.png" alt="E-commerce Website">
+        <div class="project-info">
+          <h2>E-commerce Website</h2>
+          <p>A responsive online store built using HTML, CSS, and JavaScript for smooth user experience.</p>
+          <p><strong>Tech Used:</strong> HTML, CSS, JS</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="restaurant.png" alt="Restaurant Booking App">
+        <div class="project-info">
+          <h2>Restaurant Booking App</h2>
+          <p>An easy-to-use booking app for restaurants with React front-end and Node.js backend.</p>
+          <p><strong>Tech Used:</strong> React, Node.js</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Anu Sri | Designed with anusriumaselvan@gmail.com</p>
+  </footer>
+
+  <!-- Optional JavaScript for smooth animation -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const cards = document.querySelectorAll(".project-card");
+      cards.forEach(card => {
+        card.addEventListener("mouseenter", () => card.classList.add("hover"));
+        card.addEventListener("mouseleave", () => card.classList.remove("hover"));
+      });
+    });
+  </script>
+</body>
+</html>
